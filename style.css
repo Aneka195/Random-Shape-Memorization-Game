@@ -14,8 +14,8 @@ body {
  .class polyright{
        
         display: grid;
-        width : 50;
-        height: 60;
+        width : 50%;
+        height: 60%;
         gap: 60px;
 
  }
@@ -23,8 +23,8 @@ body {
 .class polyleft{
 
  display: flex;
-  width: 50;
-  height: 60;
+  width: 50%;
+  height: 60%;
   gap: 60px;
   
 }
