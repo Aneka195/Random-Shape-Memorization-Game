@@ -12,7 +12,8 @@ body {
 
   }
  .class polyright{
-
+       
+        display: grid;
         text-align: left;
         width: 50;
         height: 60;
@@ -21,6 +22,7 @@ body {
  
 .class polyleft{
 
+display: grid;
   text-align: right;
   width: 50;
   height: 60;
