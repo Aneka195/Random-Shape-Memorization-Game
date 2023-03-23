@@ -13,7 +13,7 @@ body {
   }
  .class polyright{
        
-        display: flex;
+        display: grid;
         width : 50;
         height: 60;
         gap: 60px;
