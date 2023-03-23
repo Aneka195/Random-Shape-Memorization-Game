@@ -11,14 +11,21 @@ body {
     
 
   }
-  div{
+ .class polyright{
 
-    align-items: flex-start;
-    width: 50;
-    height: 50;
+        text-align: left;
+        width: 50;
+        height: 60;
 
-  }
+ }
+ 
+.class polyleft{
+
+  text-align: left;
+  width: 50;
+  height: 60;
   
+}
 
   
 
