@@ -16,7 +16,7 @@ body {
         display: flex;
         width : 50;
         height: 60;
-        gap: 25px;
+        gap: 60px;
 
  }
  
@@ -25,7 +25,7 @@ body {
  display: flex;
   width: 50;
   height: 60;
-  gap: 30px;
+  gap: 60px;
   
 }
 
