@@ -11,7 +11,7 @@ body {
     
 
   }
- .class polyright{
+  .polyright{
        
         float:right;
         width : 50%;
@@ -20,7 +20,7 @@ body {
 
  }
  
-.class polyleft{
+ .polyleft{
 
  display: flex;
   width: 50%;
