@@ -12,19 +12,27 @@ body {
 
   }
   .polyright{
-       text-align: right;
-        width : 50%;
-        height: auto;
+       
+        width :15%;
+        height:auto;
       
 
  }
  
  .polyleft{
-
-  text-align:left;
-  width: 50%;
-  height: auto;
   
+    width: 15%;
+    height: auto;
+    margin-right: 52%;
+    margin-left: 2%;
+  
+  
+}
+
+img[alt="star"]{
+
+  margin-top: 5%;
+
 }
 
   
