@@ -12,20 +12,19 @@ body {
 
   }
   .polyright{
-       
+       text-align: right;
         float:right;
-        width : 20%;
-        height: 30%;
-        gap: 60px;
+        width : 50%;
+        height: auto;
+      
 
  }
  
  .polyleft{
 
-  float:left;
-  width: 20%;
-  height: 30%;
-  gap: 60px;
+  text-align:left;
+  width: 50%;
+  height: auto;
   
 }
 
