@@ -10,9 +10,9 @@
         <script src="jquery-3.6.4.min.js" type="text/javascript"></script>
     </head>
 
-    <body>
+    <body onload="game()">
         <header>
-            <h1 onload="game()">
+            <h1 >
                 Shape Memorisation Game
             
             <div><img src="images/Q..PNG" alt="info"></div>
@@ -21,12 +21,12 @@
         
     <form>
         <div>
-            <img id="t" class="polyleft" src="images/triangle.svg"  alt="0" onmouseout="unlight('t')" onmouseover="highlight('t')" onclick="game()" onclick="cnt(0);">     
-            <img  id="c" class="polyright" src= "images/circle.svg" alt="1" onmouseout="unlight('c')" onmouseover="highlight('c')" onclick="cnt(1)">
+            <img id="t" class="polyleft" src="images/triangle.svg"  alt=0 onmouseout="unlight('t')" onmouseover="highlight('t')"  >     
+            <img  id="c" class="polyright" src= "images/circle.svg" alt=1 onmouseout="unlight('c')" onmouseover="highlight('c')" >
             <br><br/><br/>
             
-            <img id="s" class="polyleft"  src= "images/star.svg" alt="2" onmouseover="highlight('s')" onmouseout="unlight('s')" onclick="cnt(2)"/>
-            <img id="sq" class="polyright" src="images/square.svg"  alt="3" onmouseout="unlight('sq')" onmouseover="highlight('sq')" onclick="cnt(3)"/>
+            <img id="s" class="polyleft"  src= "images/star.svg" alt=2 onmouseover="highlight('s')" onmouseout="unlight('s')" >
+            <img id="sq" class="polyright" src="images/square.svg"  alt=3 onmouseout="unlight('sq')" onmouseover="highlight('sq')">
 
         </div>
 

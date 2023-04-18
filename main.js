@@ -8,33 +8,57 @@ function unlight(shape){
 }
 Uncomment this later on
 */
-
-function game(num){
-    var flag=true;
+    var inarr=[];   //array of user input on imgs
+    var outarr=[]; //array of outputs random imgs
+function game(){ 
+    
+  
+   var flag=true;
     var i=0;
-    var inarr=[];
-    var outarr=[];
-    var incnt;
-   while(flag==true){
+    var incnt=0;
+   randcnt(i);
 
-     for(var j=1;j<=i+1;j++){
-     var rand= Math.floor(Math.random()*4);
-     $("img[alt='"+rand+"'").css("border", "solid red");
-    outarr.push(rand);
-    }
-
-    for(var k=1;k<=outarr.length;k++){ 
-        $("form img").click(function() { 
+    $("form img").click(function(){ 
         incnt = $(this).attr("alt");
+         inarr.push(incnt);
+
+    
+    if(inarr.length==outarr.length){
+
+        for(var l=0;l<outarr.length && flag==true;l++){
+            if(inarr[l]==outarr[l]){
+                
+                flag=true;
+            }else{
+                flag=false;
+                alert("u lost"+"\n"+inarr.join()+"\n"+outarr.join()+"\n");
+            }
+        }
+        i++;
+        if(flag == true){
+            randcnt(i);
+        }
+    }
     })
-    inarr.push(parseInt(incnt));
+
     }
-    for(var l=0;l<outarr.length&& flag==true;l++){
-        if(outarr[l]==inarr[l]){
-            flag=true;
-        }else{flag=false;}
+function randcnt(a){
+    for(var k=0;k<outarr.length;k++){
+        $("img[alt='"+outarr[k]+"'").css("border","solid red"); 
     }
-i++;
+    var j=a;
+    do {
+        
+            var rand=Math.floor(Math.random()*4);
+            $("img[alt='"+rand+"'").css("border","solid red");
+            outarr.push(rand);
+            j++;
+    } while (j<a+1);
+
+
 }
-alert("u lost");
-    }
+
+
+
+
+
