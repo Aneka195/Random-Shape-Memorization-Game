@@ -43,10 +43,13 @@ img[alt="3"]{
 .hidden{
   display: none;
 }
-.visible{
-  display: inline;
-  width: 15%;
+.overlay{
+  
+    width: 50%;
     height: auto;
+    z-index: 10;
+    margin-left:25%;
+    position: absolute;
 }
 
 img[alt="13"]{
