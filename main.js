@@ -16,7 +16,7 @@ function infooff(){
 
     var inarr=[];   //array of user input on imgs
     var outarr=[]; //array of outputs random imgs
-    var midarr=[];
+   // var midarr=[];
 function game(){ 
     
 
@@ -25,9 +25,9 @@ function game(){
     var incnt=0;
     var l=0;
    randcnt(i);
-   $("form img").click(function(){ 
+   /*$("form img").click(function(){ 
     incnt = $(this).attr("alt");
-     midarr.push(incnt);})
+     midarr.push(incnt);})*/
 
     $("form img").click(function(){ 
         incnt = $(this).attr("alt");
@@ -42,7 +42,10 @@ function game(){
                 flag=true;
             }else{
                 flag=false;
-                alert("u lost"+"\n"+inarr.join()+"\n"+outarr.join()+"\n");
+                 $("#over").removeClass("hidden").addClass("overlay");// Game over
+                // GAME OVER additional info
+                 alert("Big Sad:("+"\n Your sequence: "+inarr.join()+"\n Correct Sequence: "+outarr.join()); //Game over
+               
             }
         }
         i++;
@@ -122,8 +125,77 @@ function imgvisi(r){
    });}
 
    
+
+
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+By PRABH DHIlLON
+*/
