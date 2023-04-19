@@ -12,8 +12,8 @@ Uncomment this later on
     var outarr=[]; //array of outputs random imgs
 function game(){ 
     
-  
-   var flag=true;
+
+    var flag=true;
     var i=0;
     var incnt=0;
    randcnt(i);
@@ -39,7 +39,7 @@ function game(){
             randcnt(i);
         }
     }
-    })
+    });
 
     }
 function randcnt(a){
@@ -50,14 +50,44 @@ function randcnt(a){
     do {
         
             var rand=Math.floor(Math.random()*4);
-            $("img[alt='"+rand+"'").css("border","solid red");
+            imgvisi(rand);
+            //$("img[alt='"+rand+"'").css("border","solid red");
             outarr.push(rand);
             j++;
     } while (j<a+1);
 
 
 }
+function preimgvisi(){
 
+
+}
+
+
+function imgvisi(r){
+  if(r==0)
+   {$("img[alt='"+r+"'").hide(00001,function(){
+    $("img[alt='"+r+"'").attr("src","images/triangle fill.svg").show().animate({opacity:'0'},2000,function(){
+                    $("img[alt='"+r+"'").attr("src","images/triangle.svg").animate({opacity:'1'});});
+   });}
+   if(r==1)
+   {$("img[alt='"+r+"'").hide(00001,function(){
+    $("img[alt='"+r+"'").attr("src","images/circlefill.svg").show().animate({opacity:'0'},2000,function(){
+                    $("img[alt='"+r+"'").attr("src","images/circle.svg").animate({opacity:'1'});});
+   });}
+   if(r==2)
+   {$("img[alt='"+r+"'").hide(00001,function(){
+    $("img[alt='"+r+"'").attr("src","images/starfill.svg").show().animate({opacity:'0'},2000,function(){
+                    $("img[alt='"+r+"'").attr("src","images/star.svg").animate({opacity:'1'});});
+   });}
+   if(r==3)
+   {$("img[alt='"+r+"'").hide(00001,function(){
+    $("img[alt='"+r+"'").attr("src","images/squarefill.svg").show().animate({opacity:'0'},2000,function(){
+                    $("img[alt='"+r+"'").attr("src","images/square.svg").animate({opacity:'1'});});
+   });}
+
+   
+}
 
 
 

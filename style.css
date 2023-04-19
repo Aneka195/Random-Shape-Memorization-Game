@@ -35,10 +35,22 @@ body {
   
 }
 
-img[alt="star"]{
+img[alt="3"]{
 
   margin-top: 5%;
 
 }
+.hidden{
+  display: none;
+}
+.visible{
+  display: inline;
+  width: 15%;
+    height: auto;
+}
 
-  
+img[alt="13"]{
+
+  margin-top: 5%;
+
+}
